@@ -2,7 +2,6 @@ $title-decoration-height: 90px;
 $title-decoration-width: 100px;
 
 .title {
-	@extend %roboto;
 	block-size: $text-big;
   display: block;
   font-size: $text-big;
