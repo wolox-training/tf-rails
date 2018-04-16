@@ -1,0 +1,22 @@
+$title-decoration-height: 90px;
+$title-decoration-width: 100px;
+
+.title {
+	@extend %roboto;
+	block-size: $text-big;
+  display: block;
+  font-size: $text-big;
+  position: relative;
+  margin: 80px;
+
+	&::before {
+	  background: url(assets/triangle.svg) no-repeat;
+	  content: '';
+	  height: $title-decoration-height;
+	  left: -50px;
+	  position: absolute;
+	  top: -40px;
+	  width: $title-decoration-width;
+	  z-index: -1;
+	}
+}
