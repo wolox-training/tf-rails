@@ -5,7 +5,8 @@ $tech-logo-size: 100px;
 .tech-collection {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 10%;
+  margin: 20px 0;
+  padding: 0 10%;
 }
 
 .tech {
@@ -27,7 +28,7 @@ $tech-logo-size: 100px;
     border-radius: 10px;
     border-style: solid;
     content: '';
-    display: block;
+    display: flex;
     font-size: $text-medium;
     height: $tech-height;
     left: -20px;
