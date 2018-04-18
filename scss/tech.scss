@@ -1,4 +1,4 @@
-$tech-height: 500px;
+$tech-height: 400px;
 $tech-width: 300px;
 $tech-logo-size: 100px;
 
@@ -6,6 +6,7 @@ $tech-logo-size: 100px;
   background-color: $green;
   border-radius: 10px;
   display: block;
+  font-size: $text-medium;
   height: $tech-height;
   margin: 80px;
   padding: 25px;
@@ -19,6 +20,7 @@ $tech-logo-size: 100px;
     border-style: solid;
     content: '';
     display: block;
+    font-size: $text-medium;
     height: $tech-height;
     left: -20px;
     position: absolute;
@@ -31,20 +33,28 @@ $tech-logo-size: 100px;
     display: block;
     block-size: 100px;
     height: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5px auto 5px auto;
     width: 100px;
   }
 
   .t {
     display: block;
-    font-size: $text-big;
-    padding: 20px;
+    font-size: $text-medium;
+    margin: 20px;
+  }
+
+  .release {
+    display: block;
+    font-size: $text-medium;
+    margin: 20px;
+    text-align: center;
   }
 
   .description {
+    margin: 25px;
     display: block;
-    font-size: $text-small;
+    font-size: $text-medium;
+    line-height: 20px;
     text-align: center;
   }
 }
