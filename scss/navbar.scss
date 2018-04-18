@@ -1,0 +1,32 @@
+$nav-height: 90px;
+
+.navbar {
+	align-items: center;
+	background-color: #FFF;
+	border-style: groove;
+	display: flex;
+	height: $nav-height;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+
+	li {
+		margin: 20px;
+	}
+
+	/*&::before {
+		background: url(assets/wolox_logo.svg) no-repeat;
+		content: '';
+		display: absolute;
+		height: 25px;
+		margin: 5px;
+	}*/
+}
+
+.site-logo {
+	display: flex;
+	height: 25px;
+	margin: 20px;
+}
