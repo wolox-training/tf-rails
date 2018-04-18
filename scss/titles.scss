@@ -8,14 +8,14 @@ $title-decoration-width: 100px;
   position: relative;
   margin: 80px 0 40px 10%;
 
-	&::before {
-	  background: url(assets/triangle.svg) no-repeat;
-	  content: '';
-	  height: $title-decoration-height;
-	  left: -50px;
-	  position: absolute;
-	  top: -40px;
-	  width: $title-decoration-width;
-	  z-index: -1;
-	}
+  &::before {
+    background: url(assets/triangle.svg) no-repeat;
+    content: '';
+    height: $title-decoration-height;
+    left: -50px;
+    position: absolute;
+    top: -40px;
+    width: $title-decoration-width;
+    z-index: -1;
+  }
 }
