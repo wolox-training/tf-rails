@@ -1,14 +1,22 @@
-$tech-height: 400px;
+$tech-height: 450px;
 $tech-width: 300px;
 $tech-logo-size: 100px;
 
+.tech-collection {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 10%;
+}
+
 .tech {
+  align-items: center;
   background-color: $green;
   border-radius: 10px;
-  display: block;
+  display: flex;
+  flex-direction: column;
   font-size: $text-medium;
   height: $tech-height;
-  margin: 80px;
+  margin: 25px;
   padding: 25px;
   position: relative;
   text-align: center;
@@ -30,31 +38,31 @@ $tech-logo-size: 100px;
   }
 
   .icon {
-    display: block;
     block-size: 100px;
+    display: flex;
     height: 100px;
     margin: 5px auto 5px auto;
     width: 100px;
   }
 
   .t {
-    display: block;
+    display: flex;
     font-size: $text-medium;
     margin: 20px;
   }
 
   .release {
-    display: block;
+    display: flex;
     font-size: $text-medium;
     margin: 20px;
     text-align: center;
   }
 
   .description {
-    margin: 25px;
-    display: block;
+    display: flex;
     font-size: $text-medium;
     line-height: 20px;
+    margin: 25px;
     text-align: center;
   }
 }
