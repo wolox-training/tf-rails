@@ -5,11 +5,12 @@ $tech-logo-size: 100px;
 .tech-collection {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0;
-  padding: 0 10%;
+  margin: 20px auto;
+  max-width: 1000px;
+  padding: 0 auto;
 }
 
-.tech {
+.tech-title {
   align-items: center;
   background-color: $green;
   border-radius: 10px;
@@ -24,9 +25,8 @@ $tech-logo-size: 100px;
   width: $tech-width;
 
   &::before {
-    border-color: $green;
+    border: 1px solid $green;
     border-radius: 10px;
-    border-style: solid;
     content: '';
     display: flex;
     font-size: $text-medium;
@@ -46,7 +46,7 @@ $tech-logo-size: 100px;
     width: 100px;
   }
 
-  .t {
+  .tech-name {
     display: flex;
     font-size: $text-medium;
     margin: 20px;
@@ -55,11 +55,12 @@ $tech-logo-size: 100px;
   .release {
     display: flex;
     font-size: $text-medium;
+    font-weight: bold;
     margin: 20px;
     text-align: center;
   }
 
-  .description {
+  .tech-description {
     display: flex;
     font-size: $text-medium;
     line-height: 20px;
