@@ -1,6 +1,6 @@
 $nav-height: 90px;
 
-.navbar {
+.nav {
 	align-items: center;
 	background-color: #FFF;
 	box-shadow: 0 5px 20px $grey;
@@ -12,14 +12,13 @@ $nav-height: 90px;
 	width: 100%;
 	z-index: 1;
 
-	span {
+	.nav-text {
 		font-size: $text-big;
 		margin: 20px;
 	}
 }
 
 .site-logo {
-	display: flex;
 	height: 25px;
 	margin: 20px;
 }
