@@ -5,7 +5,7 @@ $tech-logo-size: 100px;
 .tech-collection {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px auto;
+  margin: 20px auto 50px auto;
   max-width: 1400px;
   padding: 0 auto;
 }
@@ -34,9 +34,15 @@ $tech-logo-size: 100px;
     left: -20px;
     position: absolute;
     top: -20px;
+    transition: all 0.25s ease;
     width: $tech-width;
     z-index: -1;
   }
+
+  &:hover::before {
+      left: 20px;
+      top: 20px;
+    }
 
   .icon {
     block-size: 100px;
