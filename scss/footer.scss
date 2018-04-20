@@ -1,10 +1,11 @@
+$footer-height: 140px;
 
 .footer {
   align-items: center;
   background-color: $blue;
   display: flex;
   flex-direction: column;
-  height: 140px;
+  height: $footer-height;
   justify-content: center;
   margin-top: 20px;
   
