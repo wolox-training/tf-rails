@@ -1,4 +1,25 @@
 
 .footer {
+  align-items: center;
+  background-color: $blue;
   display: flex;
+  flex-direction: column;
+  height: 140px;
+  justify-content: center;
+  
+  .copyright {
+    align-self: flex-end;
+  }
+
+  .footer-logo {
+    display: flex;
+    height: 45px;
+    margin: 5px;
+  }
+
+  .footer-text {
+    color: white;
+    display: flex;
+    margin: 5px;
+  }
 }
