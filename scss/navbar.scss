@@ -3,7 +3,7 @@ $nav-height: 90px;
 .navbar {
 	align-items: center;
 	background-color: #FFF;
-	border-style: groove;
+	box-shadow: 0 10px 20px $grey;
 	display: flex;
 	height: $nav-height;
 	justify-content: space-between;
@@ -15,14 +15,6 @@ $nav-height: 90px;
 	span {
 		margin: 20px;
 	}
-
-	/*&::before {
-		background: url(assets/wolox_logo.svg) no-repeat;
-		content: '';
-		display: absolute;
-		height: 25px;
-		margin: 5px;
-	}*/
 }
 
 .site-logo {
