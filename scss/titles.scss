@@ -8,7 +8,7 @@ $title-decoration-width: 100px;
   margin: 80px 0 40px 10%;
 
   &:first-of-type {
-    margin: $nav-height+80px 0 40px 10%;
+    margin: $nav-height + 80px 0 40px 10%;
   }
 
   &::before {
