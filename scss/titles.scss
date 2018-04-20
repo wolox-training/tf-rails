@@ -2,11 +2,10 @@ $title-decoration-height: 90px;
 $title-decoration-width: 100px;
 
 .title {
-  block-size: $text-big;
-  display: block;
+  display: flex;
   font-size: $text-big;
   position: relative;
-  margin: 80px;
+  margin: 80px 0 40px 10%;
 
   &::before {
     background: url(assets/triangle.svg) no-repeat;

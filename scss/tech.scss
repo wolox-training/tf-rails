@@ -1,0 +1,70 @@
+$tech-height: 450px;
+$tech-width: 300px;
+$tech-logo-size: 100px;
+
+.tech-collection {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  max-width: 1400px;
+  padding: 0 auto;
+}
+
+.tech-title {
+  align-items: center;
+  background-color: $green;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: $text-medium;
+  height: $tech-height;
+  margin: 25px;
+  padding: 25px;
+  position: relative;
+  text-align: center;
+  width: $tech-width;
+
+  &::before {
+    border: 1px solid $green;
+    border-radius: 10px;
+    content: '';
+    display: flex;
+    font-size: $text-medium;
+    height: $tech-height;
+    left: -20px;
+    position: absolute;
+    top: -20px;
+    width: $tech-width;
+    z-index: -1;
+  }
+
+  .icon {
+    block-size: 100px;
+    display: flex;
+    height: 100px;
+    margin: 5px auto 5px auto;
+    width: 100px;
+  }
+
+  .tech-name {
+    display: flex;
+    font-size: $text-medium;
+    margin: 20px;
+  }
+
+  .release {
+    display: flex;
+    font-size: $text-medium;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .tech-description {
+    display: flex;
+    font-size: $text-medium;
+    line-height: 20px;
+    margin: 25px;
+    text-align: center;
+  }
+}
