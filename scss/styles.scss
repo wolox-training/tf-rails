@@ -3,6 +3,6 @@ $text-medium: 16px;
 $text-small: 12px;
 
 .parent {
-	display: flex;
-	flex-flow: column wrap;
+  display: flex;
+  flex-direction: column;
 }
