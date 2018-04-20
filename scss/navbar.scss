@@ -1,0 +1,24 @@
+$nav-height: 90px;
+
+.nav {
+	align-items: center;
+	background-color: white;
+	box-shadow: 0 5px 20px $grey;
+	display: flex;
+	height: $nav-height;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+
+	.nav-text {
+		font-size: $text-big;
+		margin: 20px;
+	}
+}
+
+.site-logo {
+	height: 25px;
+	margin: 20px;
+}
