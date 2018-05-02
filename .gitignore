@@ -5,20 +5,20 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
-wbooks-api/.bundle
+.bundle
 
 # Ignore all logfiles and tempfiles.
-wbooks-api/log/*
-wbooks-api/tmp/*
-!wbooks-api/log/.keep
-!wbooks-api/tmp/.keep
+log/*
+tmp/*
+!log/.keep
+!tmp/.keep
 
-wbooks-api/node_modules
-wbooks-api/yarn-error.log
+node_modules
+yarn-error.log
 
-wbooks-api/.byebug_history
+.byebug_history
 
-wbooks-api/test
+test
 
 #Maquetado project files to ignore
 Maquetado/.scss-cache

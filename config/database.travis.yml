@@ -1,0 +1,5 @@
+test:
+  adapter: postgresql
+  database: rails-bootstrap_test
+  username: rails-bootstrap
+  password: 'rails-bootstrap'
