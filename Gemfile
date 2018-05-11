@@ -41,8 +41,6 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Rubocop code reviewer
   gem 'rubocop', '~> 0.55.0', require: false
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
   gem 'pry-byebug'
   # Adds support for Capybara system testing and selenium driver
