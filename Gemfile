@@ -43,6 +43,7 @@ group :development, :test do
   gem 'rubocop', '~> 0.55.0', require: false
 
   gem 'pry-byebug'
+
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
