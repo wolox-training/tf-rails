@@ -1,5 +1,5 @@
 class Rent < ApplicationRecord
   belongs_to :user
   belongs_to :book
-  verifies :from, :to, presence: true
+  validates :user, :book, :from, :to, presence: true
 end
