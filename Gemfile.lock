@@ -285,5 +285,8 @@ DEPENDENCIES
   web-console (>= 3.3.0)
   wor-paginate (~> 0.1.1)
 
+RUBY VERSION
+   ruby 2.5.0p0
+
 BUNDLED WITH
    1.16.1
