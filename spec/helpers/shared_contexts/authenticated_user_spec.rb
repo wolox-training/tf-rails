@@ -9,5 +9,5 @@ RSpec.shared_context 'Authenticated User' do
 end
 
 RSpec.configure do |rspec|
-  rspec.include_context "Authenticated User", :include_shared => true
+  rspec.include_context 'Authenticated User', include_shared: true
 end
