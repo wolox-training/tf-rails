@@ -60,6 +60,8 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 4.8'
   # Background processing for Ruby
   gem 'sidekiq', '~> 5.1'
+  # Task scheduling
+  gem 'sidekiq-scheduler', '~> 2.2.2'
 end
 
 group :development do
