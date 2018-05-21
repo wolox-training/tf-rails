@@ -1,16 +1,15 @@
 require 'rails_helper'
+require 'helpers/shared_contexts/authenticated_user_spec'
 
 describe BooksController, type: :controller do
-  let(:user) { create(:user) }
-
-  before { login(user) }
+  include_context 'Authenticated User'
 
   describe 'GET #index' do
     context 'When fetching all the books' do
       let!(:books) { create_list(:book, 3) }
 
       before do
-        get :index, params: { id: user.id }
+        get :index
       end
 
       it 'responses with the users books json' do
@@ -31,12 +30,12 @@ describe BooksController, type: :controller do
       let!(:book) { create(:book) }
 
       before do
-        get :show, params: { user_id: user.id, id: book.id }
+        get :show, params: { id: book.id }
       end
 
       it 'responses with the user book json' do
         expect(response.body).to eq BookSerializer.new(
-          book, root: false
+          book
         ).to_json
       end
 
