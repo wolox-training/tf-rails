@@ -5,11 +5,10 @@ class RentsController < ApiController
 
   def create
     @rent = Rent.new(rent_create_params)
-    if !@rent.valid?
-      render json: { errors: @rent.errors }
-    else
-      @rent.save
+    if @rent.save
       render json: @rent, each_serializer: RentSerializer
+    else
+      serializeError(@rent)
     end
   end
 
