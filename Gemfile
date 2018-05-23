@@ -41,6 +41,8 @@ gem 'active_model_serializers', '~> 0.10.0'
 gem 'wor-paginate', '~> 0.1.1'
 
 group :development, :test do
+  # Extracts credentials from code into environment vars
+  gem 'dotenv-rails', '~> 2.4.0'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   
@@ -56,6 +58,8 @@ group :development, :test do
   gem 'faker', '~> 1.8.7', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
   # Creates factories from models
   gem 'factory_bot_rails', '~> 4.8'
+  # Background processing for Ruby
+  gem 'sidekiq', '~> 5.1'
 end
 
 group :development do

@@ -8,7 +8,7 @@ class RentsController < ApiController
     if @rent.save
       render json: @rent, each_serializer: RentSerializer
     else
-      serializeError(@rent)
+      serialize_errors(@rent)
     end
   end
 

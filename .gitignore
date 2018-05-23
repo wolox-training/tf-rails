@@ -17,10 +17,11 @@ node_modules
 yarn-error.log
 
 .byebug_history
+.env
 
 test
 
-#Maquetado project files to ignore
+# Maquetado project files to ignore
 Maquetado/.scss-cache
 Maquetado/.sass-cache
 Maquetado/application.css
