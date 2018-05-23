@@ -12,6 +12,10 @@ describe BooksController, type: :controller do
         get :index
       end
 
+      it 'checks that the response keys matches with the default formatter' do
+        expect(JSON.parse(response.body)).to be_paginated
+      end
+
       it 'responses with the users books json' do
         expected = ActiveModel::Serializer::CollectionSerializer.new(
           books, each_serializer: BookSerializer
