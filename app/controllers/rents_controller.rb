@@ -1,13 +1,21 @@
-class RentsController < ApplicationController
+class RentsController < ApiController
+  before_action :authenticate_user!
+
   include Wor::Paginate
 
   def create
-    @rent = Rent.create(rent_create_params)
-    render json: @rent, each_serializer: RentSerializer
+    @rent = Rent.new(rent_create_params)
+    if !@rent.valid?
+      render json: { errors: @rent.errors }
+    else
+      @rent.save
+      render json: @rent, each_serializer: RentSerializer
+    end
   end
 
   def index
-    render_paginated Rent, each_serializer: RentSerializer
+    @rents = Rent.from(current_user)
+    render_paginated @rents, each_serializer: RentSerializer
   end
 
   private
