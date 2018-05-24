@@ -1,4 +1,6 @@
 <div>
-  <p>Your rent, created at <%= @rent.created_at %>, which started at <%= @rent.from %> and ended today, <%= @rent.to %>.</p>
-  <p>Please return the book as soon as possible. Thank you.</p>
+  <p><%= t(:rent_creation_date) %><%= @rent.created_at %>
+     <%= t(:rent_start) %><%= @rent.from %>
+     <%= t(:rent_end) %><%= @rent.to %>.</p>
+  <p><%= t(:rent_expiration_final_msg)%></p>
 </div>

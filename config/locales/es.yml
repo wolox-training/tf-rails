@@ -1,0 +1,7 @@
+es:
+  hello: "Hola mundo"
+  rent_expiration_title: "Su renta ha expirado hoy"
+  rent_creation_date: "Su renta, creada el "
+  rent_start: ", la cual comenzó el "
+  rent_end: ", terminó hoy, "
+  rent_expiration_final_msg: "Por favor devuelva el libro lo antes posible. Gracias."

@@ -31,3 +31,8 @@
 
 en:
   hello: "Hello world"
+  rent_expiration_title: "Your rent expired today"
+  rent_creation_date: "Your rent, created at "
+  rent_start: ", which started at "
+  rent_end: " and ended today, "
+  rent_expiration_final_msg: "Please return the book as soon as possible. Thank you."
