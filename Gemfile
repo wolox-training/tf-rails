@@ -45,7 +45,7 @@ group :development, :test do
   gem 'dotenv-rails', '~> 2.4.0'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  
+
   gem 'pry-byebug', '~> 3.6'
   # Rubocop code reviewer
   gem 'rubocop', '~> 0.55.0', require: false
@@ -62,6 +62,8 @@ group :development, :test do
   gem 'sidekiq', '~> 5.1'
   # Task scheduling
   gem 'sidekiq-scheduler', '~> 2.2.2'
+  # Enables administrator back office
+  gem 'activeadmin', '~> 1.3'
 end
 
 group :development do

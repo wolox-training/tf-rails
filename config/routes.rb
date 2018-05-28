@@ -1,6 +1,8 @@
 require 'sidekiq/web'
 Sidekiq::Web.set :session_secret, Rails.application.secrets[:secret_key_base]
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   mount_devise_token_auth_for 'User', at: 'auth'
   mount Sidekiq::Web => '/sidekiq'
   resources :books, only: [:index, :show]

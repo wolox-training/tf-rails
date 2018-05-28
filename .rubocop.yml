@@ -12,6 +12,7 @@ LineLength:
 Metrics/BlockLength:
   Exclude:
     - spec/**/*
+    - app/admin/rents.rb
 
 Style/FrozenStringLiteralComment:
  Enabled: false
