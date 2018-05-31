@@ -64,6 +64,8 @@ group :development, :test do
   gem 'sidekiq-scheduler', '~> 2.2.2'
   # Enables administrator back office
   gem 'activeadmin', '~> 1.3'
+  # Helps interacting with external APIs
+  gem 'httparty', '~> 0.16'
 end
 
 group :development do
