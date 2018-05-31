@@ -3,7 +3,7 @@ class Rent < ApplicationRecord
   belongs_to :book
   validates :user, :book, :from, :to, presence: true
 
-  attr_accessor :expir_email_sent 
+  attr_accessor :expir_email_sent
 
   @expir_email_sent = false
 
