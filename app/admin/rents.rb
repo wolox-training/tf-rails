@@ -28,7 +28,7 @@ ActiveAdmin.register Rent do
     end
   end
 
-  filter :user, collection: -> { User.all.map { |user| [user.email, user.id] } }
+  filter :user, collection: -> { User.all.pluck('id', 'email') }
   filter :book
   filter :from, label: 'Rent start'
   filter :to, label: 'Rent expiration'
@@ -37,7 +37,7 @@ ActiveAdmin.register Rent do
     f.inputs do
       if f.object.new_record?
         f.input :user, include_blank: false,
-                       collection: User.all.map { |user| [user.email, user.id] }
+                       collection: User.all.pluck('id', 'email')
         f.input :book, include_blank: false
         f.input :from
       end
