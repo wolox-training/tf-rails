@@ -4,8 +4,8 @@ class RentWorker
   include Sidekiq::Worker
 
   def perform
-    Rent.all.each do |rent|
-      RentMailer.rent_period_end(rent.id).deliver_later if rent.to < Time.zone.now
+    Rent.find_each do |rent|
+      RentMailer.rent_period_end(rent.id).deliver_later if rent.expired? && !rent.expir_email_sent
     end
   end
 end
