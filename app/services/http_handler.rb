@@ -4,7 +4,8 @@ class HTTPHandler
   default_timeout 10
 
   def books(isbn)
-    self.class.get('/api/books', query: { bibkeys: "ISBN:#{isbn}", format: 'json', jscmd: 'data' })
+    response = self.class.get('/api/books',
+                              query: { bibkeys: "ISBN:#{isbn}", format: 'json', jscmd: 'data' })
     response.parsed_response["ISBN:#{isbn}"]
   end
 end

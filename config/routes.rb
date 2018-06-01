@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   mount Sidekiq::Web => '/sidekiq'
   resources :books, only: [:index, :show]
   resources :rents, only: [:create, :index]
+  get '/open_library/:isbn', to: 'books#open_library_info'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
