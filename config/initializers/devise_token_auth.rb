@@ -46,3 +46,17 @@ DeviseTokenAuth.setup do |config|
   # do so by enabling this flag. NOTE: This feature is highly experimental!
   # config.enable_standard_devise_support = false
 end
+Rails.application.config.to_prepare do
+   Devise::OmniauthCallbacksController.class_eval do
+      def assign_provider_attrs(user, auth_hash)
+        all_attrs = auth_hash['info'].slice(*user.attributes.keys)
+        orig_val = ActionController::Parameters.permit_all_parameters
+        ActionController::Parameters.permit_all_parameters = true
+        permitted_attrs = ActionController::Parameters.new(all_attrs)
+        permitted_attrs.permit({})
+        return_val = user.assign_attributes(permitted_attrs)
+        ActionController::Parameters.permit_all_parameters = orig_val
+        return return_val
+    end
+  end
+end
