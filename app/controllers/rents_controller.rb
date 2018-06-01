@@ -1,6 +1,5 @@
 class RentsController < ApiController
   before_action :authenticate_user!
-  before_action :set_locale
 
   include Wor::Paginate
 
@@ -22,9 +21,5 @@ class RentsController < ApiController
 
   def rent_create_params
     params.require(:rent).permit(:user_id, :book_id, :from, :to)
-  end
-
-  def set_locale
-    I18n.locale = current_user.try(:locale) || I18n.default_locale
   end
 end
