@@ -5,7 +5,7 @@ class RentWorker
 
   def perform
     Rent.find_each do |rent|
-      RentMailer.rent_period_end(rent.id).deliver_later if rent.expired? && !rent.expir_email_sent
+      RentMailer.rent_period_end(rent.id).deliver_later if rent.expired?
     end
   end
 end
