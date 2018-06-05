@@ -4,7 +4,7 @@ class ApiController < ActionController::API
   before_action :set_locale
 
   def serialize_errors(model_instance)
-    render json: { errors: model_instance.errors }
+    render json: { errors: model_instance.errors }, status: :unprocessable_entity
   end
 
   def set_locale
